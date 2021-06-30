@@ -13,6 +13,12 @@ search:
   rel_url: true
   button: true
   
+defaults:
+  - scope: "pages"
+    path: ""
+    values:
+      last_modified_date: {{ site.time }}
+  
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
